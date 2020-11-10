@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace GeneralStore.MVC.Controllers
 {
+   
     public class ProductController : Controller
     {
         private ApplicationDbContext _db = new ApplicationDbContext();

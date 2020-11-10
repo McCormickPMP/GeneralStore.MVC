@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -26,6 +27,5 @@ namespace GeneralStore.MVC.Models
         [Display(Name = "It is food")]
         //Need to know if the item is perishable
         public bool IsFood { get; set; }
-
-    }
+    }    
 }
