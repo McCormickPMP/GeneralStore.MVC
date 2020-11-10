@@ -5,25 +5,28 @@
 <div class="jumbotron">
     <h1>Welcome to our General Store</h1>
     <p class="lead">Come on in and look around.  Feel free to browse.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    @Html.ActionLink("Learn More About Us", "About", null, new { @class = "btn btn-primary btn-large" })
 </div>
 
 <div class="row">
     <div class="col-md-4">
         <h2>Products</h2>
         <p>
-            Our General Store is located in Indiana.  But given that Covid 19 is such a factor in shopping, we have made ordering online a simple task
+            Our General Store is located in Indiana.  But given that Covid 19 is such a factor in shopping, 
+            we have made ordering online a simple task.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Mission Statement</h2>
+        <p>Our mission is to deliver to you the highest quality product with fast free shipping</p>
+        @Html.ActionLink("About Us", "About", null, new { @class = "btn btn-primary btn-large" })
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Give Back</h2>
+        <p>We proudly support the Humane Society of Pinellas County.  A "No Kill" animal shelter.  
+        The staff work tirelessly to achieve the best outcomes for pets and their adopters.
+        Let us know how we can make a difference in your community.</p>
+        @Html.ActionLink("Contact Us", "Contact", null, new { @class = "btn btn-primary btn-large" })
     </div>
 </div>
